@@ -74,7 +74,7 @@ def update_expire(created_at):
 def get_me(access_token):
     '''
     DESCRIPTION:
-        Calls /vapid/me endpoint and returns user login/id.
+        Calls /rest/v1.0/me endpoint and returns user login/id.
     INPUTS:
         access_token =  access_token used as credentials to communicate with the API
     OUTPUTS:
@@ -82,7 +82,7 @@ def get_me(access_token):
         me_json['id']    = user's login ID
         '''
     headers = {"Authorization": "Bearer " + access_token}
-    response = requests.get(BASE_URL+"/vapid/me", headers=headers)
+    response = requests.get(BASE_URL+"/rest/v1.0/me", headers=headers)
     me_json = response.json()
     return me_json['login'], me_json['id']
 
