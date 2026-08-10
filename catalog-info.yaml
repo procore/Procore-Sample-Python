@@ -1,0 +1,23 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Procore-Sample-Python
+  annotations:
+    github.com/project-slug: procore/Procore-Sample-Python
+    github.com/team-slug: procore/team-api
+  title: Procore-Sample-Python
+  description: Procore-Sample-Python
+  tags: []
+  links:
+    - url: https://github.com/procore/procore-sample-python
+      title: Support
+      icon: help
+    - url: https://procore.enterprise.slack.com/archives/CSG83TSCV
+      title: Team Slack
+      icon: chat
+spec:
+  type: library
+  lifecycle: prototype
+  owner: team-api
+
